@@ -1,0 +1,24 @@
+spring:
+  security:
+    user:
+      name: fallou
+      password: pass
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring-security-db?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true
+    password: user
+    username: user
+    driverClassName: com.mysql.cj.jdbc.Driver
+  application:
+    name: UAA-SECURITY
+  cloud:
+    discovery:
+      enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
